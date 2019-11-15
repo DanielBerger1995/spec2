@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Parallax Example</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scroll.css">
+</head>
+
+<body>
+
+    <!--  Parallax scrolling mountains  -->
+
+    <div class="parallax-container">
+        <div class="parallax-layer layer-0" data-parallax-speed="0.05" data-max-scroll="565"></div>
+        <div class="parallax-layer layer-1" data-parallax-speed="0.2" data-max-scroll="565"></div>
+        <div class="parallax-layer layer-2" data-parallax-speed="0.3" data-max-scroll="565"></div>
+        <div class="parallax-layer layer-3" data-parallax-speed="0.5" data-max-scroll="565"></div>
+    </div>
+
+
+    <!-- ======================= -->
+    <!-- Here the content starts -->
+    <!-- ======================= -->
+    <div class="content">
+
+        <!--  Progression bar -->
+        <div class="status"></div>
+
+
+
+        <h1>This is parallax.</h1>
+
+        <div class="puppy_box">
+            <img src="images/puppy.JPG" class="puppy">
+            <img src="images/puppy.JPG" class="puppy">
+            <img src="images/puppy.JPG" class="puppy">
+            <img src="images/puppy.JPG" class="puppy">
+            <img src="images/puppy.JPG" class="puppy">
+            <img src="images/puppy.JPG" class="puppy">
+            <img src="images/puppy.JPG" class="puppy">
+        </div>
+
+
+
+
+    </div>
+
+
+    <script src="parallax.js"></script>
+    <script>    const bar = document.querySelector(".status");
+    const statusBar = () => {
+      currentScroll = Math.round(window.scrollY / (document.documentElement.offsetHeight - window.innerHeight) * 100);
+      bar.style.width = currentScroll + "%";
+        //console.log(currentScroll);
+    }
+    window.addEventListener("scroll", statusBar);
+</script>
+</body></html>

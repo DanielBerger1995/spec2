@@ -1,0 +1,8 @@
+Inspiration sources:
+
+
+Parallex "FireWatch" effects:
+	https://medium.com/@hamstu/recreating-the-firewatch-parallax-effect-213694d42f4e
+	http://www.firewatchgame.com
+    
+    
